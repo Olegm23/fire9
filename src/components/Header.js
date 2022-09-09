@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { logoutInitiate } from '../redux/actions';
 import CustomLink from './CustomLink';
+import '../Header.css';
 
 const Header = () => {
   const user = useSelector(state => state.currentUser);
@@ -20,8 +21,8 @@ const Header = () => {
 
   return (
     <div className='header'>
-      <Link to='/'>
-        <p className={'logo'}>Contact App</p>
+      <Link className={'logo'} to='/'>
+        <p>Contact App</p>
       </Link>
       <div className='header-right'>
         <CustomLink to='/'>Home</CustomLink>
