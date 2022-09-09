@@ -15,7 +15,15 @@ const HomePage = () => {
     return () => {
       setData({})
     }
-  }, [])
+  }, []);
+
+  // const handleRemove = db.child(`contacts/${id}`).remove((err) => {
+  //   if (err) {
+  //     toast.error(err);
+  //   } else {
+  //     toast.success("Contact deleted successfully");
+  //   }
+  // });
 
   return (
     <div style={{ marginTop: "100px" }}>
@@ -37,7 +45,7 @@ const HomePage = () => {
                 <td>{data[id].name}</td>
                 <td>{data[id].email}</td>
                 <td>{data[id].contact}</td>
-                <td> <button>X</button> </td>
+                <td> <button onClick={handleRemove}>X</button> </td>
               </tr>
             )
           })}

@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(233, 180, 161);
+  box-sizing: border-box;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 40px;
+  color: rgb(37, 126, 204);
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-right p {
+  text-decoration: none;
+  padding: 30px;
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.header-right a .active {
+  color: white;
+  background: #000;
+}

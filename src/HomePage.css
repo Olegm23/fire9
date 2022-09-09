@@ -1,0 +1,13 @@
+.styled-table {
+  margin: 0 auto;
+  width: 50%;
+}
+
+
+tbody {
+  text-align: center;
+}
+
+tbody tr {
+  background-color: aquamarine;
+}
